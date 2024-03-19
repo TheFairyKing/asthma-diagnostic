@@ -6,13 +6,14 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #f8f9fa;
     color: #333;
+    line-height: 1.6;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
@@ -20,78 +21,72 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
     margin-bottom: 20px;
-    text-align: center;
-    color: #007bff;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="password"],
-input[type="number"],
-select {
-    width: 100%;
-    padding: 10px;
+p {
     margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-hr {
-    margin: 20px 0;
-    border: none;
-    border-top: 1px solid #ccc;
-}
-
-/* Patient list */
-.patient-item {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.patient-item h3 {
-    color: #007bff;
-    margin-bottom: 5px;
-}
-
-/* Navigation */
+/* Navigation bar */
 .navbar {
     background-color: #007bff;
     padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .navbar a {
     color: #fff;
     text-decoration: none;
     margin-right: 20px;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
 .navbar a:hover {
-    text-decoration: underline;
+    color: #ffc107;
+}
+
+/* Main content sections */
+.section {
+    margin-bottom: 30px;
+}
+
+.section-header {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
 }
 
 /* Footer */
@@ -100,16 +95,15 @@ hr {
     color: #fff;
     padding: 20px;
     text-align: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    border-radius: 8px;
+    margin-top: 50px;
 }
 
 /* Responsive design */
-@media screen and (max-width: 600px) {
-    .container {
-        margin: 30px auto;
-        padding: 10px;
+@media screen and (max-width: 768px) {
+    .column {
+        flex: 1 0 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 }
