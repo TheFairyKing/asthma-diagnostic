@@ -1,33 +1,18 @@
-import React, { useState, useEffect } from 'react';
-
-const AlertsPage = () => {
-  const [alerts, setAlerts] = useState([]);
-
-  // Simulate fetching alerts from backend
-  useEffect(() => {
-    // Fetch alerts from backend or any data source
-    // Example:
-    const fetchedAlerts = [
-      { id: 1, message: 'Critical diagnostic result for Patient A.' },
-      { id: 2, message: 'Reminder: Schedule appointment for Patient B.' },
-      // Add more alerts as needed
-    ];
-    setAlerts(fetchedAlerts);
-  }, []);
-
-  return (
-    <div className="alerts-container">
-      <h2>Alerts and Notifications</h2>
-      <ul>
-        {alerts.map((alert) => (
-          <li key={alert.id}>{alert.message}</li>
-        ))}
-      </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts and Notifications</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Alerts and Notifications</h2>
+        <!-- Display alerts and notifications here -->
     </div>
-  );
-};
-
-export default AlertsPage;
+</body>
+</html>
 
 <!DOCTYPE html>
 <html lang="en">

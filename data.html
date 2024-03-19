@@ -1,54 +1,23 @@
-import React from 'react';
-import { Line } from 'react-chartjs-2';
-
-const DataVisualizationPage = ({ spirometryData, symptomTrends }) => {
-  // Prepare data for chart rendering
-  const spirometryChartData = {
-    // Configure data for spirometry chart
-    // Example:
-    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-    datasets: [
-      {
-        label: 'Spirometry Data',
-        data: spirometryData,
-        fill: false,
-        borderColor: 'rgb(75, 192, 192)',
-        tension: 0.1,
-      },
-    ],
-  };
-
-  const symptomTrendsData = {
-    // Configure data for symptom trends chart
-    // Example:
-    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-    datasets: [
-      {
-        label: 'Symptom Trends',
-        data: symptomTrends,
-        fill: false,
-        borderColor: 'rgb(255, 99, 132)',
-        tension: 0.1,
-      },
-    ],
-  };
-
-  return (
-    <div className="data-visualization-container">
-      <h2>Data Visualization</h2>
-      <div className="chart">
-        <h3>Spirometry Data Over Time</h3>
-        <Line data={spirometryChartData} />
-      </div>
-      <div className="chart">
-        <h3>Symptom Trends</h3>
-        <Line data={symptomTrendsData} />
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Data Visualization</h2>
+        <!-- Display data visualizations here -->
+        <canvas id="spirometryChart"></canvas>
+        <canvas id="symptomTrendsChart"></canvas>
     </div>
-  );
-};
-
-export default DataVisualizationPage;
+    <script src="data.js"></script>
+</body>
+</html>
 
 <!DOCTYPE html>
 <html lang="en">

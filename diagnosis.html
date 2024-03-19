@@ -1,35 +1,18 @@
-import React, { useState } from 'react';
-
-const DiagnosisPage = () => {
-  const [formData, setFormData] = useState({});
-  const [fileData, setFileData] = useState(null);
-
-  const handleFormSubmit = () => {
-    // Handle form submission
-    console.log(formData);
-  };
-
-  const handleFileUpload = (e) => {
-    // Handle file upload
-    const file = e.target.files[0];
-    setFileData(file);
-  };
-
-  return (
-    <div className="diagnosis-container">
-      <h2>Make Diagnosis</h2>
-      <form onSubmit={handleFormSubmit}>
-        {/* Form fields */}
-        <input type="text" placeholder="Symptoms" onChange={(e) => setFormData({ ...formData, symptoms: e.target.value })} />
-        {/* Other fields */}
-        <input type="file" accept=".csv, .xlsx" onChange={handleFileUpload} />
-        <button type="submit">Submit</button>
-      </form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnosis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Diagnosis</h2>
+        <!-- Add diagnosis form or file upload option here -->
     </div>
-  );
-};
-
-export default DiagnosisPage;
+</body>
+</html>
 
 <!DOCTYPE html>
 <html lang="en">

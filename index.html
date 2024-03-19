@@ -1,38 +1,25 @@
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { signIn } from '../actions/authActions';
-
-const SignInPage = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const dispatch = useDispatch();
-
-  const handleSignIn = () => {
-    // Perform validation if needed
-    dispatch(signIn(email, password));
-  };
-
-  return (
-    <div className="signin-container">
-      <h2>Sign In</h2>
-      <input
-        type="email"
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <button onClick={handleSignIn}>Sign In</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Sign In</h2>
+        <form id="signInForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Sign In</button>
+        </form>
     </div>
-  );
-};
-
-export default SignInPage;
+    <script src="signin.js"></script>
+</body>
+</html>
 
 <!DOCTYPE html>
 <html lang="en">
