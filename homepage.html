@@ -9,30 +9,32 @@
       <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/06e5199a0b38aaf71a9fe78c15e12d570b503fa5650493f6db9422e9fc41db14?apiKey=89206080c3424bb49f51c7c3e49c6f3b&" alt="Company Logo" class="shrink-0 self-stretch my-auto border border-white border-solid aspect-[2.33] stroke-[1px] stroke-white w-[63px]" />
       <div class="flex relative gap-5 self-stretch pl-20 my-auto text-base leading-6 max-md:flex-wrap">
         <div class="flex gap-5 justify-between my-auto text-white">
-          <button onClick={() => { /* Handle dashboard click */ }}>Dashboard</button>
-          <button onClick={() => { /* Handle FAQ click */ }}>FAQ</button>
-          <button onClick={() => { /* Handle contact click */ }}>Contact</button>
+          <a href="#">Dashboard</a>
+          <a href="#">FAQ</a>
+          <a href="#">Contact</a>
           <div class="flex gap-1 justify-center">
-            <button onClick={() => { /* Handle patient data click */ }}>Patient Data</button>
+            <a href="#">Patient Data</a>
             <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/fda752d4b20b01dbb0e3dc10d54e95f457b6308cbfef41dc018d4ed032865d0f?apiKey=89206080c3424bb49f51c7c3e49c6f3b&" alt="" class="shrink-0 w-6 aspect-square" />
           </div>
         </div>
         <div class="flex gap-4 justify-center">
-          <button onClick={() => { /* Handle learn more click */ }} class="justify-center px-5 py-2 text-white border border-white border-solid shadow-sm">Learn More</button>
-          <button onClick={() => { /* Handle sign up click */ }} class="justify-center px-5 py-2 text-white bg-black border border-black border-solid">Sign Up</button>
+          <a href="#" class="justify-center px-5 py-2 text-white border border-white border-solid shadow-sm">Learn More</a>
+          <a href="#" class="justify-center px-5 py-2 text-white bg-black border border-black border-solid">Sign Up</a>
         </div>
       </div>
     </nav>
   </header>
+  
   <main class="flex overflow-hidden relative flex-col items-start px-14 py-20 w-full text-white min-h-[915px] max-md:px-5 max-md:max-w-full">
     <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0d2cb105e5385591666a8a58fc2ff0cb71d8fbcc91ee38e214e76ad3360f36c0?apiKey=89206080c3424bb49f51c7c3e49c6f3b&" alt="" class="object-cover absolute inset-0 size-full" />
     <h1 class="relative mt-52 text-6xl font-bold leading-[77px] w-[841px] max-md:mt-10 max-md:max-w-full max-md:text-4xl max-md:leading-[53px]">Transforming Asthma Diagnosis and Detection</h1>
     <p class="relative mt-6 text-2xl leading-9 w-[841px] max-md:max-w-full">Welcome to our medical web app designed for accurate and efficient asthma diagnosis and detection.</p>
     <div class="flex relative gap-4 items-start pt-4 mt-6 mb-36 text-base leading-6 max-md:mb-10">
-      <button onClick={() => { /* Handle login click */ }} class="justify-center px-6 py-3 whitespace-nowrap bg-black border border-black border-solid max-md:px-5">Login</button>
-      <button onClick={() => { /* Handle sign up click */ }} class="justify-center px-6 py-3 border border-white border-solid max-md:px-5">Sign Up</button>
+      <a href="#" class="justify-center px-6 py-3 whitespace-nowrap bg-black border border-black border-solid max-md:px-5">Login</a>
+      <a href="#" class="justify-center px-6 py-3 border border-white border-solid max-md:px-5">Sign Up</a>
     </div>
   </main>
+  
   <section class="flex flex-col pt-2.5 w-full bg-white max-md:max-w-full">
     <div class="flex flex-col items-center px-16 py-20 w-full bg-white max-md:px-5 max-md:max-w-full">
       <p class="mt-8 text-base font-semibold leading-6 text-center text-black">Reliable</p>
@@ -45,7 +47,7 @@
               <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b91b68183d4a9c7adab922bed8baf1489f4562791eaff4c6bc38a77bca3e6e4d?apiKey=89206080c3424bb49f51c7c3e49c6f3b&" alt="Email Icon" class="self-center w-12 aspect-square" />
               <h3 class="mt-6 text-3xl font-bold leading-10">Email</h3>
               <p class="mt-4">Send us an email and we'll get back to you.</p>
-              <button onClick={() => { /* Handle email click */ }} class="mt-6 text-black underline">johndoe@st.ug.edu.gh</button>
+              <a href="mailto:johndoe@st.ug.edu.gh" class="mt-6 text-black underline">johndoe@st.ug.edu.gh</a>
             </div>
           </div>
           <div class="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
@@ -53,7 +55,7 @@
               <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7aa77e424f94503bb6e651c50abfee984ed10339b9f20ce41a5b609bc06991d1?apiKey=89206080c3424bb49f51c7c3e49c6f3b&" alt="Phone Icon" class="self-center w-12 aspect-square" />
               <h3 class="mt-6 text-3xl font-bold leading-10">Phone</h3>
               <p class="mt-4">Give us a call during business hours.</p>
-              <button onClick={() => { /* Handle phone click */ }} class="mt-6 text-black underline">+233 27 000 0000</button>
+              <a href="tel:+233270000000" class="mt-6 text-black underline">+233 27 000 0000</a>
             </div>
           </div>
           <div class="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
@@ -68,23 +70,24 @@
       </div>
     </div>
   </section>
+  
   <footer class="flex flex-col px-16 py-20 w-full bg-white max-md:px-5 max-md:max-w-full">
     <div class="flex gap-5 justify-between w-full max-md:flex-wrap max-md:max-w-full">
       <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/fa306ea2bdf698e002313a373daf277d5bf34fd8acee04e45fff51d34a646b93?apiKey=89206080c3424bb49f51c7c3e49c6f3b&" alt="Company Logo" class="shrink-0 my-auto aspect-[2.33] w-[63px]" />
       <div class="flex gap-5 max-md:flex-wrap">
         <nav class="flex gap-5 justify-between items-start text-base font-semibold leading-6 text-black max-md:flex-wrap">
-          <button onClick={() => { /* Handle homepage click */ }}>Homepage</button>
-          <button onClick={() => { /* Handle dashboard click */ }}>Dashboard</button>
-          <button onClick={() => { /* Handle patient diagnostics click */ }}>Patient Diagnostics</button>
-          <button onClick={() => { /* Handle spirometry results click */ }} class="self-stretch leading-6">Spirometry Results</button>
-          <button onClick={() => { /* Handle patient symptoms click */ }}>Patient Symptoms</button>
+          <a href="#">Homepage</a>
+          <a href="#">Dashboard</a>
+          <a href="#">Patient Diagnostics</a>
+          <a href="#" class="self-stretch leading-6">Spirometry Results</a>
+          <a href="#">Patient Symptoms</a>
         </nav>
         <div class="flex flex-1 gap-3 pl-20 my-auto">
-          <button onClick={() => { /* Handle Facebook click */ }}><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b374903b3b58f19a20b6f17412e6ef64138924ca84fc6958d2fc69c6506b998f?apiKey=89206080c3424bb49f51c7c3e49c6f3b&" alt="Facebook Icon" class="shrink-0 w-6 aspect-square" /></button>
-          <button onClick={() => { /* Handle Twitter click */ }}><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/973ae2f4bac06b359363caa91c8fe840470c8c5a065f3d76266dc2c16e296983?apiKey=89206080c3424bb49f51c7c3e49c6f3b&" alt="Twitter Icon" class="shrink-0 w-6 aspect-square" /></button>
-          <button onClick={() => { /* Handle Instagram click */ }}><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ed46b9abb949e8a22ffc48b3d7a136e1ac7e46ec75a01a045e5cdf8f55d5534c?apiKey=89206080c3424bb49f51c7c3e49c6f3b&" alt="Instagram Icon" class="shrink-0 w-6 aspect-square" /></button>
-          <button onClick={() => { /* Handle LinkedIn click */ }}><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/13a02d80b8bb97dfdba0b258be17959dd7ae5710974b47563f547fe30fd24d95?apiKey=89206080c3424bb49f51c7c3e49c6f3b&" alt="LinkedIn Icon" class="shrink-0 w-6 aspect-square" /></button>
-          <button onClick={() => { /* Handle YouTube click */ }}><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/458c3519d07148cb4a736cdd8ec44c8f83ec0dd87c107978a9abfa6ecaab4c5f?apiKey=89206080c3424bb49f51c7c3e49c6f3b&" alt="YouTube Icon" class="shrink-0 w-6 aspect-square" /></button>
+          <a href="#"><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b374903b3b58f19a20b6f17412e6ef64138924ca84fc6958d2fc69c6506b998f?apiKey=89206080c3424bb49f51c7c3e49c6f3b&" alt="Facebook Icon" class="shrink-0 w-6 aspect-square" /></a>
+          <a href="#"><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/973ae2f4bac06b359363caa91c8fe840470c8c5a065f3d76266dc2c16e296983?apiKey=89206080c3424bb49f51c7c3e49c6f3b&" alt="Twitter Icon" class="shrink-0 w-6 aspect-square" /></a>
+          <a href="#"><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ed46b9abb949e8a22ffc48b3d7a136e1ac7e46ec75a01a045e5cdf8f55d5534c?apiKey=89206080c3424bb49f51c7c3e49c6f3b&" alt="Instagram Icon" class="shrink-0 w-6 aspect-square" /></a>
+          <a href="#"><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/13a02d80b8bb97dfdba0b258be17959dd7ae5710974b47563f547fe30fd24d95?apiKey=89206080c3424bb49f51c7c3e49c6f3b&" alt="LinkedIn Icon" class="shrink-0 w-6 aspect-square" /></a>
+          <a href="#"><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/458c3519d07148cb4a736cdd8ec44c8f83ec0dd87c107978a9abfa6ecaab4c5f?apiKey=89206080c3424bb49f51c7c3e49c6f3b&" alt="YouTube Icon" class="shrink-0 w-6 aspect-square" /></a>
         </div>
       </div>
     </div>
@@ -92,9 +95,9 @@
     <div class="flex gap-5 justify-between self-center mt-8 text-sm leading-5 max-md:flex-wrap">
       <p class="text-black">© 2024 King&Eben. All rights reserved.</p>
       <div class="flex gap-5 justify-between text-black">
-        <button onClick={() => { /* Handle privacy policy click */ }} class="underline">Privacy Policy</button>
-        <button onClick={() => { /* Handle terms of service click */ }} class="underline">Terms of Service</button>
-        <button onClick={() => { /* Handle cookies settings click */ }} class="underline">Cookies Settings</button>
+        <a href="#" class="underline">Privacy Policy</a>
+        <a href="#" class="underline">Terms of Service</a>
+        <a href="#" class="underline">Cookies Settings</a>
       </div>
     </div>
   </footer>
